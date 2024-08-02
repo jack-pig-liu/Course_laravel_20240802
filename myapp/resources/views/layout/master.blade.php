@@ -2,10 +2,10 @@
     
     <head> 
         <meta charset="utf-8"> 
-        <script src="/assets/js/jquery-2.2.4.min.js" defer></script> 
-        <script src="/assets/js/bootstrap.min.js" defer></script> 
-        <link rel="stylesheet" href="/assets/css/bootstrap.min.css"> 
-        <link rel="stylesheet" href="/assets/css/font-awesome.min.css"> 
+        <script src="{{ asset('assets/js/jquery-2.2.4.min.js') }}" defer></script> 
+        <script src="{{ asset('assets/js/bootstrap.min.js') }}" defer></script> 
+        <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}"> 
+        <link rel="stylesheet" href="{{ asset('assets/css/font-awesome.min.css') }} "> 
         <title>@yield('title')</title> 
     </head> 
     <body> 
