@@ -2064,24 +2064,6 @@
 	<!-- <script src="/js/functions.js"></script> -->
 	<script src="{{asset('js/functions.js')}}"></script>
 
-
-	<script src="{{ asset( '/js/modules/gototop.js' ) }}"></script>
-	<script src="{{ asset( '/js/modules/menus.js' ) }}"></script>
-	<script src="{{ asset( '/js/modules/topsearch.js' ) }}"></script>
-	<script src="{{ asset( '/js/modules/logo.js' ) }}"></script>
-	<script src="{{ asset( '/js/modules/headers.js' ) }}"></script>
-	<script src="{{ asset( '/js/modules/onepage.js' ) }}"></script>
-	<script src="{{ asset( '/js/modules/menus.js' ) }}"></script>
-	<script src="{{ asset( '/js/jquery.js' ) }}"></script>
-	<script src="{{ asset( '/js/modules/bootstrap.js' ) }}"></script>
-	<script src="{{ asset( '/js/modules/topcart.js' ) }}"></script>
-	<script src="{{ asset( '/js/modules/accordion.js' ) }}"></script>
-    <script src="{{ asset( '/js/modules/subscribe.js' ) }}"></script>
-	<script src="{{ asset( '/js/modules/counter.js' ) }}"></script>
-	<script src="{{ asset( '/js/plugins.bootstrap.js' ) }}"></script>
-	<script src="{{ asset( '/js/plugins.counter.js' ) }}"></script>
-	<script src="{{ asset( '/js/plugins.form.js' ) }}"></script>
-    <script src="{{ asset( '/js/modules/stickfooteronsmall.js' ) }}"></script>
 </body>
 </html>
 
