@@ -9,6 +9,8 @@ Route::get('/', function () {
 Route::group(['prefix' => 'user'], function () {
     Route::group(['prefix' => 'auth'], function () {
         Route::get('login', 'App\Http\Controllers\UserAuthController@Login');
+        Route::get('signup', 'App\Http\Controllers\UserAuthController@SignUp');   
+
         Route::get('profile/{id}', 'App\Http\Controllers\UserAuthController@Profile');
     });
 });
