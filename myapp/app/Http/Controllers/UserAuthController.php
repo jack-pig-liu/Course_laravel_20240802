@@ -8,7 +8,7 @@ class UserAuthController extends Controller
 {
     public function Login()
     {
-        return 1235456787868567;
+        return view('auth.login');
     }
 
     public function Profile($id)

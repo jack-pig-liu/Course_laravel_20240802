@@ -1,0 +1,63 @@
+/* ----------------------------------------------------------------
+    Canvas: Agency
+-----------------------------------------------------------------*/
+
+:root {
+	--cnvs-themecolor: #c0bb62;
+	--cnvs-themecolor-rgb: 192, 187, 98;
+}
+
+
+#header {
+	--cnvs-primary-menu-tt: uppercase;
+	--cnvs-primary-menu-ls: 1px;
+	--cnvs-primary-menu-font-size: 13px;
+	--cnvs-primary-menu-font-weight: 700;
+	--cnvs-header-border-color: transparent;
+
+	--cnvs-primary-menu-submenu-font-size: 11px;
+}
+
+.is-expanded-menu .menu-link {
+--cnvs-menu-padding-x: 20px;
+}
+
+#header:not(.sticky-header) #header-wrap .header-row {
+	border-top: 1px solid rgba(var(--cnvs-contrast-rgb), 0.1);
+	border-bottom: 1px solid rgba(var(--cnvs-contrast-rgb), 0.1);
+}
+
+@media (min-width: 992px) {
+
+	.boxed-slider { padding-top: 60px; }
+
+}
+
+#footer {
+	--cnvs-footer-bg: transparent;
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+#footer .container {
+	border-top: 1px solid rgba(var(--cnvs-contrast-rgb), 0.1);
+	padding: 50px 0;
+}
+
+#copyrights {
+	background-color: transparent;
+	padding: 0;
+}
+
+
+/* RTL */
+
+@media (min-width: 992px) {
+	body.rtl .primary-menu.style-2 ul li .mega-menu-content {
+		left: 0;
+		right: -15px;
+	}
+	body:not(.device-sm):not(.device-xs):not(.device-xxs).rtl .primary-menu.style-2.center > div > ul { text-align: right; }
+}
+
