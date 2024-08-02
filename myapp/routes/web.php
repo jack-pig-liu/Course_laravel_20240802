@@ -12,3 +12,7 @@ Route::group(['prefix' => 'user'], function () {
         Route::get('profile/{id}', 'App\Http\Controllers\UserAuthController@Profile');
     });
 });
+
+Route::group(['prefix' => 'merchandise'], function () {
+    Route::get('{merchandise_id}', 'App\Http\Controllers\MerchandiseController@MerchandiseItemPage');
+});
