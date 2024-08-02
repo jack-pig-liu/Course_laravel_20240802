@@ -20,6 +20,7 @@ class UserAuthController extends Controller
     {
         $binding = [
             'title' => '註冊',
+            'sub_title' => '測試測試',
         ];
         return view( 'auth.signup' , $binding);
 
