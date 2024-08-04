@@ -36,13 +36,14 @@
 			<div class="content-wrap">
 				<div class="container">
 
-					<div class="form-widget">
+					<div >
 
 						<div class="form-result"></div>
 
 						<div class="row">
 							<div class="col-lg-12">
-								<form class="row" action="/user/auth/signup" method="post" enctype="multipart/form-data">
+								<form action="/user/auth/signup" method="post" >
+                                    @csrf
 									<div class="form-process">
 										<div class="css3-spinner">
 											<div class="css3-spinner-scaler"></div>
