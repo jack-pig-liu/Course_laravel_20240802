@@ -31,7 +31,13 @@ class UserAuthController extends Controller
     {
         $form_data = request()->all();
         // dd($form_data );
-        $user = User::create($form_data);
+        // $user = User::create($form_data);
+        $user = User::create([
+            'email' => $form_data['email'],
+            'password' => $form_data['password'],
+            'type' => $form_data['type'],
+            'nickname' => $form_data['nickname'],
+        ]);
         dd($user);
     }
     
