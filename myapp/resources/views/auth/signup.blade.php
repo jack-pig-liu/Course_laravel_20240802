@@ -54,8 +54,8 @@
 										<input type="text" name="nickname" id="nickname" class="form-control required" value="" placeholder="輸入名稱">
 									</div>
 									<div class="col-12 form-group">
-										<label>帳號:</label>
-										<input type="text" name="account" id="account" class="form-control required" value="" placeholder="輸入帳號">
+										<label>email:</label>
+										<input type="email" name="email" id="email" class="form-control required" value="" placeholder="輸入帳號">
 									</div>
 									<div class="col-12 form-group">
 										<label>密碼:</label>
