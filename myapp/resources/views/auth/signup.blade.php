@@ -51,15 +51,15 @@
 									</div>
 									<div class="col-12 form-group">
 										<label>暱稱:</label>
-										<input type="text" name="nickname" id="nickname" class="form-control required" value="" placeholder="輸入名稱">
+										<input type="text" name="nickname" id="nickname" class="form-control required" value="{{old('nickname')}}" placeholder="輸入名稱">
 									</div>
 									<div class="col-12 form-group">
 										<label>email:</label>
-										<input type="email" name="email" id="email" class="form-control required" value="" placeholder="輸入帳號">
+										<input type="email" name="email" id="email" class="form-control required" value="{{old('email')}}" placeholder="輸入帳號">
 									</div>
 									<div class="col-12 form-group">
 										<label>密碼:</label>
-										<input type="text" name="password" id="password" class="form-control required" value="" placeholder="輸入密碼">
+										<input type="text" name="password" id="password" class="form-control required" value="{{old('password')}}" placeholder="輸入密碼">
 									</div>
 									<div class="col-12 form-group">
 										<label>帳號類型:</label><br>
