@@ -8,10 +8,10 @@ Route::get('/', function () {
 
 Route::group(['prefix' => 'user'], function () {
     Route::group(['prefix' => 'auth'], function () {
-        Route::get('signup', 'App\Http\Controllers\UserAuthController@SignUp');   
+        Route::get('signup', 'App\Http\Controllers\UserAuthController@SignUp')->name('user.auth.signup');   
         Route::post('signup', 'App\Http\Controllers\UserAuthController@SignUpProcess');   
         
-        Route::get('login', 'App\Http\Controllers\UserAuthController@Login');
+        Route::get('login', 'App\Http\Controllers\UserAuthController@Login')->name('user.auth.login');;
         Route::post('login', 'App\Http\Controllers\UserAuthController@LoginProcess');
 
         Route::get('profile/{id}', 'App\Http\Controllers\UserAuthController@Profile');
