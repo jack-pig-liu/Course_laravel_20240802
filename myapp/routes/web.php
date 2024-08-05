@@ -14,6 +14,8 @@ Route::group(['prefix' => 'user'], function () {
         Route::get('login', 'App\Http\Controllers\UserAuthController@Login')->name('user.auth.login');;
         Route::post('login', 'App\Http\Controllers\UserAuthController@LoginProcess');
 
+        Route::get('signout', 'App\Http\Controllers\UserAuthController@SignOut')->name('user.auth.signout');   
+        
         Route::get('profile/{id}', 'App\Http\Controllers\UserAuthController@Profile');
     });
 });

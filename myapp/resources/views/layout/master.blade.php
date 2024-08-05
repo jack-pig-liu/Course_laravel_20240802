@@ -114,7 +114,7 @@
 							<ul class="menu-container">
 								@if ( session()->has('user_id'))
 								<li class="menu-item">
-									<a class="menu-link" href="index.html"><div>登出</div></a>
+									<a class="menu-link" href="{{route('user.auth.signout')}}"><div>登出</div></a>
 								</li>
 								@else
 								<li class="menu-item">
