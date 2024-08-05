@@ -39,7 +39,7 @@ class UserAuthController extends Controller
         if ( $form_data['password'] == "" || $form_data['email'] == "" || $form_data['nickname'] == "" ) {
             return redirect('/user/auth/signup')
             ->withInput()
-            ->withErrors('資料不齊全');
+            ->withErrors(['資料不齊全','請檢查所有欄位都填滿']);
         }else{
             $user = User::create([
                 'email' => $form_data['email'],

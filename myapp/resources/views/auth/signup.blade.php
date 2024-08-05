@@ -37,8 +37,15 @@
 				<div class="container">
 
 					<div >
-
-						<div class="form-result">{{ $errors }}</div>
+						<div class="form-result">
+						@if( $errors and count($errors))
+							<ul>
+							@foreach( $errors->all() as $err )
+								<li> {{$err}} </li>
+							@endforeach
+							</ul>
+						@endif 
+						</div>
 
 						<div class="row">
 							<div class="col-lg-12">
