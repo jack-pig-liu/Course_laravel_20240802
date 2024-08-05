@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use App\Shop\Entity\User;
 use Hash;
+use Mail;
 
 class UserAuthController extends Controller
 {
@@ -47,6 +48,15 @@ class UserAuthController extends Controller
                 'type' => $form_data['type'],
                 'nickname' => $form_data['nickname'],
             ]);
+
+            Mail::send('email.signUpEmailNotification', [
+                'nickname' => $form_data['nickname']
+            ], function($message) use ($form_data) {
+                $message->to($form_data['email'], $form_data['nickname'])
+                    ->from('gtaped14876@gmail.com')
+                    ->subject('Laravel 8 Mail Test');
+            });
+    
             dd($user);
         }
     }
