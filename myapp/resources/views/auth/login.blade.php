@@ -23,7 +23,7 @@
 						@csrf
 						<div class="col-12 form-group">
 							<label for="login-form-username">Email:</label>
-							<input type="text" id="email" name="lemail" value="" class="form-control">
+							<input type="text" id="email" name="email" value="" class="form-control">
 						</div>
 
 						<div class="col-12 form-group">
