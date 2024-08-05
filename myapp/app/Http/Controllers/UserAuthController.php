@@ -21,8 +21,15 @@ class UserAuthController extends Controller
         $user = User::where('email', $form_data['email'])->FirstOrFail();
         if (Hash::check($form_data['password'], $user->password)){
             echo '登入成功';
+            session()->put('user_id', $user->id);
+            session()->put('user_email', $user->email);
+            # 導向到首頁
         }else{
             echo '登入失敗';
+            # 導向到登入頁
+            return redirect('/user/auth/login')
+                ->withInput()
+                ->withErrors(['無此帳號','帳號密碼錯誤']);
         }
 
     }

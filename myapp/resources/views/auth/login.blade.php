@@ -19,6 +19,7 @@
 					</div>
 				</div>
 				<div>
+					@include('components.errorMessage')
 					<form class="row mb-0" action="/user/auth/login" method="post">
 						@csrf
 						<div class="col-12 form-group">
