@@ -38,7 +38,7 @@
 
 					<div >
 
-						<div class="form-result"></div>
+						<div class="form-result">{{ $errors }}</div>
 
 						<div class="row">
 							<div class="col-lg-12">
