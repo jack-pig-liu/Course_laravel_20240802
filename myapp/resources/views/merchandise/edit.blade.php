@@ -83,7 +83,7 @@
                                name="photo"
                                placeholder="商品圖片"
                         >
-                        <img src="{{ asset($Merchandise->photo) }}" />
+                        <img src="{{ asset('storage/'.$Merchandise->photo) }}"  />
                     </div>
 
                     <div class="form-group">

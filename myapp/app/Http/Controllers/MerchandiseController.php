@@ -67,7 +67,7 @@ class MerchandiseController extends Controller
             // 檔案相對路徑
             $file_relative_path = 'images/merchandise/' . $file_name;
             // 檔案存放目錄為對外公開 public 目錄下的相對位置
-            $file_path = public_path($file_relative_path);
+            $file_path = storage_path($file_relative_path);
             // 裁切圖片
             $photo->move($file_path, $file_name);
             // 設定圖片檔案相對位置
