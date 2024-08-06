@@ -14,7 +14,7 @@
                       method="post"
                       enctype="multipart/form-data"
                 >
-                    {{-- 隱藏方法欄位 --}}
+                    @csrf
                     {{ method_field('PUT') }}
 
                     <div class="form-group">
@@ -107,8 +107,6 @@
                         >
                     </div>
                     <button type="submit" class="btn btn-default">更新</button>
-                    {{-- CSRF 欄位--}}
-                    {{ csrf_field() }}
                 </form>
             </div>
         </div>
