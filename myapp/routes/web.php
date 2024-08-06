@@ -21,7 +21,7 @@ Route::group(['prefix' => 'user'], function () {
 });
 
 Route::group(['prefix' => 'merchandise'], function () {
-    Route::get('create', 'App\Http\Controllers\MerchandiseController@MerchandiseCreate');
+    Route::get('create', 'App\Http\Controllers\MerchandiseController@MerchandiseCreate')->withoutMiddleware([AuthUserAdminMiddleware::class]);;
     
     Route::group(['prefix' => '{merchandise_id}'], function () {
         Route::get('edit', 'App\Http\Controllers\MerchandiseController@MerchandiseEdit');
