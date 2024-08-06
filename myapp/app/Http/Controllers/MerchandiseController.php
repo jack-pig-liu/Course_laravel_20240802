@@ -31,6 +31,12 @@ class MerchandiseController extends Controller
 
     public function MerchandiseEdit($merchandise_id)
     {
-        return $merchandise_id;
+
+        $Merchandise = Merchandise::where('id', $merchandise_id)->first();
+        $binding = [
+            'title' => '編輯商品',
+            'Merchandise' => $Merchandise,
+        ];
+        return view('merchandise.edit', $binding);
     }
 }
