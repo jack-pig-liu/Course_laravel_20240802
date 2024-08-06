@@ -106,5 +106,13 @@ class MerchandiseController extends Controller
         return view('merchandise.manage', $binding);
     }
 
+    public function MerchandiseDelete($merchandise_id)
+    {
+
+        $Merchandise = Merchandise::where('id', $merchandise_id)->delete();
+
+        return redirect(route('merchandise.manage'));
+    }
+
 
 }
