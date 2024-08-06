@@ -41,7 +41,7 @@
                                class="form-control"
                                id="name"
                                name="name"
-                               placeholder="{{ trans('shop.merchandise.fields.name') }}"
+                               placeholder="商品名稱"
                                value="{{ old('name', $Merchandise->name) }}"
                         >
                     </div>
@@ -51,7 +51,7 @@
                                class="form-control"
                                id="name_en"
                                name="name_en"
-                               placeholder="{{ trans('shop.merchandise.fields.name-en') }}"
+                               placeholder="商品英文名稱"
                                value="{{ old('name_en', $Merchandise->name_en) }}"
                         >
                     </div>
