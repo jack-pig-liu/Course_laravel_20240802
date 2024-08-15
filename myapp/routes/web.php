@@ -2,6 +2,11 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Middleware\AuthUserAdminMiddleware;
+use Socialite;
+
+Route::get('/google/auth', function () {
+    return Socialite::driver('google')->redirect();
+});
 
 Route::get('/', function () {
     return view('welcome');

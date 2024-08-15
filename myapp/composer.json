@@ -9,6 +9,7 @@
         "guzzlehttp/guzzle": "^7.9",
         "intervention/image": "^3.7",
         "laravel/framework": "^11.9",
+        "laravel/socialite": "^5.15",
         "laravel/tinker": "^2.9"
     },
     "require-dev": {
