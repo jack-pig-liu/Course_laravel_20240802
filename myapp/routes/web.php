@@ -8,6 +8,11 @@ Route::get('/google/auth', function () {
     return Socialite::driver('google')->redirect();
 });
 
+Route::get('/googlelogin', function () {
+    $user = Socialite::driver('google')->stateless()->user();
+    dd($user);
+});
+
 Route::get('/', function () {
     return view('welcome');
 });
