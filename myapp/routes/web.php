@@ -2,16 +2,18 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Middleware\AuthUserAdminMiddleware;
-use Socialite;
+// use Socialite;
 
-Route::get('/google/auth', function () {
-    return Socialite::driver('google')->redirect();
-});
+// Route::get('/google/auth', function () {
+//     return Socialite::driver('google')->redirect();
+// });
 
-Route::get('/googlelogin', function () {
-    $user = Socialite::driver('google')->stateless()->user();
-    dd($user);
-});
+// Route::get('/googlelogin', function () {
+//     $user = Socialite::driver('google')->stateless()->user();
+//     dd($user);
+// });
+
+Route::get('payment', 'App\Http\Controllers\CheckoutController@sendOrder');   
 
 Route::get('/', function () {
     return view('welcome');
